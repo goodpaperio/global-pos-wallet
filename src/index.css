@@ -8,70 +8,70 @@
 
 @layer base {
   :root {
-    /* Core backgrounds - Deep space aesthetic */
-    --background: 230 25% 5%;
-    --foreground: 210 40% 98%;
+    /* Core backgrounds - Obsidian #0B0F14 */
+    --background: 213 29% 6%;
+    --foreground: 208 35% 93%;
 
-    /* Card surfaces with glassmorphism */
-    --card: 230 20% 8%;
-    --card-foreground: 210 40% 98%;
+    /* Card surfaces - Charcoal #121821 */
+    --card: 216 29% 10%;
+    --card-foreground: 208 35% 93%;
 
-    --popover: 230 20% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 216 29% 10%;
+    --popover-foreground: 208 35% 93%;
 
-    /* Primary - Electric Cyan */
-    --primary: 187 100% 50%;
-    --primary-foreground: 230 25% 5%;
+    /* Primary - Neon Red #FF2B2B */
+    --primary: 0 100% 58%;
+    --primary-foreground: 208 35% 93%;
 
-    /* Secondary - Muted glass */
-    --secondary: 230 15% 15%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary - Slate Blue #3A4A5F */
+    --secondary: 214 24% 30%;
+    --secondary-foreground: 208 35% 93%;
 
     /* Muted elements */
-    --muted: 230 15% 12%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 216 29% 12%;
+    --muted-foreground: 214 20% 55%;
 
-    /* Accent - Teal glow */
-    --accent: 175 80% 45%;
-    --accent-foreground: 230 25% 5%;
+    /* Accent - Lighter Neon Red for highlights */
+    --accent: 0 90% 65%;
+    --accent-foreground: 213 29% 6%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 208 35% 93%;
 
-    --border: 230 15% 18%;
-    --input: 230 15% 15%;
-    --ring: 187 100% 50%;
+    --border: 214 24% 20%;
+    --input: 216 29% 15%;
+    --ring: 0 100% 58%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(187 100% 50%) 0%, hsl(175 80% 45%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(187 100% 50% / 0.15) 0%, transparent 70%);
-    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(187 100% 50% / 0.15) 0%, transparent 50%);
+    /* Custom gradients - Neon Red theme */
+    --gradient-primary: linear-gradient(135deg, hsl(0 100% 58%) 0%, hsl(0 90% 45%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(0 100% 58% / 0.15) 0%, transparent 70%);
+    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(0 100% 58% / 0.15) 0%, transparent 50%);
     
     /* Glass effect */
-    --glass-bg: hsl(230 20% 10% / 0.6);
-    --glass-border: hsl(230 15% 25% / 0.5);
+    --glass-bg: hsl(216 29% 10% / 0.6);
+    --glass-border: hsl(214 24% 25% / 0.5);
     
     /* Glow colors */
-    --glow-cyan: 0 0 40px hsl(187 100% 50% / 0.4);
-    --glow-teal: 0 0 40px hsl(175 80% 45% / 0.3);
+    --glow-primary: 0 0 40px hsl(0 100% 58% / 0.4);
+    --glow-secondary: 0 0 40px hsl(214 24% 40% / 0.3);
 
     /* Sidebar - keeping for compatibility */
-    --sidebar-background: 230 25% 5%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 187 100% 50%;
-    --sidebar-primary-foreground: 230 25% 5%;
-    --sidebar-accent: 230 15% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 230 15% 18%;
-    --sidebar-ring: 187 100% 50%;
+    --sidebar-background: 213 29% 6%;
+    --sidebar-foreground: 208 35% 93%;
+    --sidebar-primary: 0 100% 58%;
+    --sidebar-primary-foreground: 208 35% 93%;
+    --sidebar-accent: 214 24% 30%;
+    --sidebar-accent-foreground: 208 35% 93%;
+    --sidebar-border: 214 24% 20%;
+    --sidebar-ring: 0 100% 58%;
   }
 
   .dark {
     /* Dark mode is the default for this Web3 aesthetic */
-    --background: 230 25% 5%;
-    --foreground: 210 40% 98%;
+    --background: 213 29% 6%;
+    --foreground: 208 35% 93%;
   }
 }
 
@@ -115,7 +115,7 @@
   }
 
   .glow-hover:hover {
-    box-shadow: var(--glow-cyan);
+    box-shadow: var(--glow-primary);
   }
 
   /* Floating animation */
