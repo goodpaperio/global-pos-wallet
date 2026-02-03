@@ -8,70 +8,70 @@
 
 @layer base {
   :root {
-    /* Core backgrounds - Obsidian #0B0F14 */
-    --background: 213 29% 6%;
-    --foreground: 208 35% 93%;
+    /* Core backgrounds - Sand #F3EFE7 */
+    --background: 40 30% 93%;
+    --foreground: 0 0% 11%;
 
-    /* Card surfaces - Charcoal #121821 */
-    --card: 216 29% 10%;
-    --card-foreground: 208 35% 93%;
+    /* Card surfaces - Warm White #FBF8F2 */
+    --card: 40 53% 97%;
+    --card-foreground: 0 0% 11%;
 
-    --popover: 216 29% 10%;
-    --popover-foreground: 208 35% 93%;
+    --popover: 40 53% 97%;
+    --popover-foreground: 0 0% 11%;
 
-    /* Primary - Neon Red #FF2B2B */
-    --primary: 0 100% 58%;
-    --primary-foreground: 208 35% 93%;
+    /* Primary - Signal Coral #FF5A5F */
+    --primary: 358 100% 68%;
+    --primary-foreground: 40 53% 97%;
 
-    /* Secondary - Slate Blue #3A4A5F */
-    --secondary: 214 24% 30%;
-    --secondary-foreground: 208 35% 93%;
+    /* Secondary - Charcoal #2B2B2B */
+    --secondary: 0 0% 17%;
+    --secondary-foreground: 40 53% 97%;
 
     /* Muted elements */
-    --muted: 216 29% 12%;
-    --muted-foreground: 214 20% 55%;
+    --muted: 40 20% 88%;
+    --muted-foreground: 0 0% 40%;
 
-    /* Accent - Lighter Neon Red for highlights */
-    --accent: 0 90% 65%;
-    --accent-foreground: 213 29% 6%;
+    /* Accent - Deeper Coral for highlights */
+    --accent: 358 90% 60%;
+    --accent-foreground: 40 53% 97%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 208 35% 93%;
+    --destructive-foreground: 40 53% 97%;
 
-    --border: 214 24% 20%;
-    --input: 216 29% 15%;
-    --ring: 0 100% 58%;
+    --border: 40 15% 85%;
+    --input: 40 20% 90%;
+    --ring: 358 100% 68%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients - Neon Red theme */
-    --gradient-primary: linear-gradient(135deg, hsl(0 100% 58%) 0%, hsl(0 90% 45%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(0 100% 58% / 0.15) 0%, transparent 70%);
-    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(0 100% 58% / 0.15) 0%, transparent 50%);
+    /* Custom gradients - Signal Coral theme */
+    --gradient-primary: linear-gradient(135deg, hsl(358 100% 68%) 0%, hsl(358 90% 55%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(358 100% 68% / 0.1) 0%, transparent 70%);
+    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(358 100% 68% / 0.1) 0%, transparent 50%);
     
-    /* Glass effect */
-    --glass-bg: hsl(216 29% 10% / 0.6);
-    --glass-border: hsl(214 24% 25% / 0.5);
+    /* Glass effect - Light theme */
+    --glass-bg: hsl(40 53% 97% / 0.8);
+    --glass-border: hsl(40 15% 80% / 0.6);
     
     /* Glow colors */
-    --glow-primary: 0 0 40px hsl(0 100% 58% / 0.4);
-    --glow-secondary: 0 0 40px hsl(214 24% 40% / 0.3);
+    --glow-primary: 0 0 40px hsl(358 100% 68% / 0.25);
+    --glow-secondary: 0 0 40px hsl(0 0% 17% / 0.1);
 
     /* Sidebar - keeping for compatibility */
-    --sidebar-background: 213 29% 6%;
-    --sidebar-foreground: 208 35% 93%;
-    --sidebar-primary: 0 100% 58%;
-    --sidebar-primary-foreground: 208 35% 93%;
-    --sidebar-accent: 214 24% 30%;
-    --sidebar-accent-foreground: 208 35% 93%;
-    --sidebar-border: 214 24% 20%;
-    --sidebar-ring: 0 100% 58%;
+    --sidebar-background: 40 30% 93%;
+    --sidebar-foreground: 0 0% 11%;
+    --sidebar-primary: 358 100% 68%;
+    --sidebar-primary-foreground: 40 53% 97%;
+    --sidebar-accent: 0 0% 17%;
+    --sidebar-accent-foreground: 40 53% 97%;
+    --sidebar-border: 40 15% 85%;
+    --sidebar-ring: 358 100% 68%;
   }
 
   .dark {
-    /* Dark mode is the default for this Web3 aesthetic */
-    --background: 213 29% 6%;
-    --foreground: 208 35% 93%;
+    /* Dark mode variant */
+    --background: 0 0% 11%;
+    --foreground: 40 30% 93%;
   }
 }
 
@@ -136,11 +136,11 @@
 }
 
 @layer utilities {
-  /* Background patterns */
+  /* Background patterns - Light theme */
   .bg-grid-pattern {
     background-image: 
-      linear-gradient(to right, hsl(230 15% 15% / 0.3) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(230 15% 15% / 0.3) 1px, transparent 1px);
+      linear-gradient(to right, hsl(40 15% 85% / 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(40 15% 85% / 0.5) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 }
