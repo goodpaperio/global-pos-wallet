@@ -15,12 +15,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Hero button - Signal Coral gradient
-        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-[0_0_30px_hsl(358_100%_68%_/_0.4)] hover:scale-105",
+        // Hero button - Electric Cyan gradient
+        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-[0_0_30px_hsl(184_100%_55%_/_0.4)] hover:scale-105",
         // Glass button
         glass: "bg-card/80 backdrop-blur-sm border border-border text-foreground hover:bg-card hover:border-primary/30",
         // Outline glow
-        "outline-glow": "border border-primary/50 text-primary bg-transparent hover:bg-primary/10 hover:border-primary hover:shadow-[0_0_20px_hsl(358_100%_68%_/_0.2)]",
+        "outline-glow": "border border-primary/50 text-primary bg-transparent hover:bg-primary/10 hover:border-primary hover:shadow-[0_0_20px_hsl(184_100%_55%_/_0.3)]",
       },
       size: {
         default: "h-10 px-4 py-2",

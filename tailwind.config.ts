@@ -61,10 +61,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom colors - Signal Coral theme
-        coral: {
-          DEFAULT: "hsl(358 100% 68%)",
-          glow: "hsl(358 90% 60%)",
+        // Custom colors - Electric Cyan theme
+        cyan: {
+          electric: "hsl(184 100% 55%)",
+          glow: "hsl(184 90% 45%)",
         },
         charcoal: {
           DEFAULT: "hsl(0 0% 17%)",
@@ -103,7 +103,7 @@ export default {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "hero-glow": "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(358 100% 68% / 0.1) 0%, transparent 50%)",
+        "hero-glow": "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(184 100% 55% / 0.15) 0%, transparent 50%)",
       },
     },
   },
