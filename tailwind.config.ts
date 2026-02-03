@@ -61,13 +61,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom Web3 colors - Neon Red theme
-        neon: {
-          red: "hsl(0 100% 58%)",
-          glow: "hsl(0 90% 65%)",
+        // Custom colors - Signal Coral theme
+        coral: {
+          DEFAULT: "hsl(358 100% 68%)",
+          glow: "hsl(358 90% 60%)",
         },
-        slate: {
-          blue: "hsl(214 24% 30%)",
+        charcoal: {
+          DEFAULT: "hsl(0 0% 17%)",
         },
       },
       borderRadius: {
@@ -103,7 +103,7 @@ export default {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "hero-glow": "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(0 100% 58% / 0.15) 0%, transparent 50%)",
+        "hero-glow": "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(358 100% 68% / 0.1) 0%, transparent 50%)",
       },
     },
   },
