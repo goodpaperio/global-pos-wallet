@@ -61,13 +61,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom colors - Electric Cyan theme
+        // Custom Web3 colors
         cyan: {
-          electric: "hsl(184 100% 55%)",
-          glow: "hsl(184 90% 45%)",
+          glow: "hsl(187 100% 50%)",
         },
-        charcoal: {
-          DEFAULT: "hsl(0 0% 17%)",
+        teal: {
+          glow: "hsl(175 80% 45%)",
         },
       },
       borderRadius: {
@@ -103,7 +102,7 @@ export default {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "hero-glow": "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(184 100% 55% / 0.15) 0%, transparent 50%)",
+        "hero-glow": "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(187 100% 50% / 0.15) 0%, transparent 50%)",
       },
     },
   },

@@ -8,70 +8,70 @@
 
 @layer base {
   :root {
-    /* Core backgrounds - Sand #F3EFE7 */
-    --background: 40 30% 93%;
-    --foreground: 0 0% 11%;
+    /* Core backgrounds - Deep space aesthetic */
+    --background: 230 25% 5%;
+    --foreground: 210 40% 98%;
 
-    /* Card surfaces - Warm White #FBF8F2 */
-    --card: 40 53% 97%;
-    --card-foreground: 0 0% 11%;
+    /* Card surfaces with glassmorphism */
+    --card: 230 20% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 40 53% 97%;
-    --popover-foreground: 0 0% 11%;
+    --popover: 230 20% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    /* Primary - Electric Cyan #19F0FF */
-    --primary: 184 100% 55%;
-    --primary-foreground: 0 0% 11%;
+    /* Primary - Electric Cyan */
+    --primary: 187 100% 50%;
+    --primary-foreground: 230 25% 5%;
 
-    /* Secondary - Charcoal #2B2B2B */
-    --secondary: 0 0% 17%;
-    --secondary-foreground: 40 53% 97%;
+    /* Secondary - Muted glass */
+    --secondary: 230 15% 15%;
+    --secondary-foreground: 210 40% 98%;
 
     /* Muted elements */
-    --muted: 40 20% 88%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 230 15% 12%;
+    --muted-foreground: 215 20% 55%;
 
-    /* Accent - Deeper Cyan for highlights */
-    --accent: 184 90% 45%;
-    --accent-foreground: 40 53% 97%;
+    /* Accent - Teal glow */
+    --accent: 175 80% 45%;
+    --accent-foreground: 230 25% 5%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 53% 97%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 40 15% 85%;
-    --input: 40 20% 90%;
-    --ring: 184 100% 55%;
+    --border: 230 15% 18%;
+    --input: 230 15% 15%;
+    --ring: 187 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients - Electric Cyan theme */
-    --gradient-primary: linear-gradient(135deg, hsl(184 100% 55%) 0%, hsl(184 90% 40%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(184 100% 55% / 0.1) 0%, transparent 70%);
-    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(184 100% 55% / 0.1) 0%, transparent 50%);
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(187 100% 50%) 0%, hsl(175 80% 45%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(187 100% 50% / 0.15) 0%, transparent 70%);
+    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(187 100% 50% / 0.15) 0%, transparent 50%);
     
-    /* Glass effect - Light theme */
-    --glass-bg: hsl(40 53% 97% / 0.8);
-    --glass-border: hsl(40 15% 80% / 0.6);
+    /* Glass effect */
+    --glass-bg: hsl(230 20% 10% / 0.6);
+    --glass-border: hsl(230 15% 25% / 0.5);
     
     /* Glow colors */
-    --glow-primary: 0 0 40px hsl(184 100% 55% / 0.3);
-    --glow-secondary: 0 0 40px hsl(0 0% 17% / 0.1);
+    --glow-cyan: 0 0 40px hsl(187 100% 50% / 0.4);
+    --glow-teal: 0 0 40px hsl(175 80% 45% / 0.3);
 
     /* Sidebar - keeping for compatibility */
-    --sidebar-background: 40 30% 93%;
-    --sidebar-foreground: 0 0% 11%;
-    --sidebar-primary: 184 100% 55%;
-    --sidebar-primary-foreground: 0 0% 11%;
-    --sidebar-accent: 0 0% 17%;
-    --sidebar-accent-foreground: 40 53% 97%;
-    --sidebar-border: 40 15% 85%;
-    --sidebar-ring: 184 100% 55%;
+    --sidebar-background: 230 25% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 187 100% 50%;
+    --sidebar-primary-foreground: 230 25% 5%;
+    --sidebar-accent: 230 15% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 230 15% 18%;
+    --sidebar-ring: 187 100% 50%;
   }
 
   .dark {
-    /* Dark mode variant */
-    --background: 0 0% 11%;
-    --foreground: 40 30% 93%;
+    /* Dark mode is the default for this Web3 aesthetic */
+    --background: 230 25% 5%;
+    --foreground: 210 40% 98%;
   }
 }
 
@@ -115,7 +115,7 @@
   }
 
   .glow-hover:hover {
-    box-shadow: var(--glow-primary);
+    box-shadow: var(--glow-cyan);
   }
 
   /* Floating animation */
@@ -136,11 +136,11 @@
 }
 
 @layer utilities {
-  /* Background patterns - Light theme */
+  /* Background patterns */
   .bg-grid-pattern {
     background-image: 
-      linear-gradient(to right, hsl(40 15% 85% / 0.5) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(40 15% 85% / 0.5) 1px, transparent 1px);
+      linear-gradient(to right, hsl(230 15% 15% / 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(230 15% 15% / 0.3) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 }
