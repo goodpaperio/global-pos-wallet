@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Globe, Wallet } from "lucide-react";
-import heroImage from "@/assets/hero-blockchain.png";
 
 const HeroSection = () => {
   return (
@@ -41,11 +40,8 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center">
-              <Button variant="hero" size="xl">
-                Get Started
-              </Button>
-              <Button variant="outline-glow" size="xl">
-                Learn More
+              <Button variant="hero" size="xl" disabled className="opacity-60 cursor-not-allowed">
+                Coming Soon
               </Button>
             </div>
 
@@ -74,8 +70,8 @@ const HeroSection = () => {
               
               {/* Main image */}
               <img
-                src={heroImage}
-                alt="Blockchain network visualization"
+                src="/idw3-banner.png"
+                alt="Global network"
                 className="relative z-10 w-full max-w-lg rounded-3xl border border-border/30 shadow-2xl"
               />
               

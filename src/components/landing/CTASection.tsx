@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -20,9 +19,8 @@ const CTASection = () => {
             <p className="mx-auto mb-8 max-w-xl text-lg text-muted-foreground">
               Join thousands of users taking control of their identity and business
             </p>
-            <Button variant="hero" size="xl" className="group">
-              Get Started Now
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Button variant="hero" size="xl" disabled className="opacity-60 cursor-not-allowed">
+              Coming Soon
             </Button>
           </div>
         </div>

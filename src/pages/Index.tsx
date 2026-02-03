@@ -6,7 +6,10 @@ import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
+      style={{ backgroundImage: "url(/idw3-background.png)" }}
+    >
       <Navbar />
       <main>
         <HeroSection />

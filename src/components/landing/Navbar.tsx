@@ -7,10 +7,7 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
-              <span className="font-heading text-lg font-bold text-primary-foreground">ID</span>
-            </div>
-            <span className="font-heading text-xl font-semibold text-foreground">IDW3</span>
+            <img src="/idw3-logo.png" alt="IDW3" className="h-9 w-auto" />
           </a>
 
           {/* Navigation Links */}
@@ -28,11 +25,8 @@ const Navbar = () => {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-              Learn More
-            </Button>
-            <Button variant="hero" size="sm">
-              Get Started
+            <Button variant="hero" size="sm" disabled className="opacity-60 cursor-not-allowed">
+              Coming Soon
             </Button>
           </div>
         </div>
