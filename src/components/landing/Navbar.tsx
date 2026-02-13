@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src="/idw3-logo.png" alt="IDW3" className="h-9 w-auto" />
+            <img src="/idw3-logo-gold.png" alt="IDW3" className="h-9 w-auto" />
           </a>
 
           {/* Navigation Links */}

@@ -7,9 +7,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
-              <span className="font-heading text-sm font-bold text-primary-foreground">ID</span>
-            </div>
+            <img src="/idw3-logo-gold.png" alt="IDW3" className="h-8 w-auto" />
             <span className="font-heading text-lg font-semibold text-foreground">IDW3</span>
           </div>
 

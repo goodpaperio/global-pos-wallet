@@ -15,12 +15,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Web3 Hero button - glowing cyan
-        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-[0_0_30px_hsl(187_100%_50%_/_0.5)] hover:scale-105",
+        // Hero button - gold to light orange
+        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-[0_0_30px_hsl(43_74%_49%_/_0.4)] hover:scale-105",
         // Glass button
         glass: "bg-secondary/50 backdrop-blur-sm border border-border/50 text-foreground hover:bg-secondary/70 hover:border-primary/30",
         // Outline glow
-        "outline-glow": "border border-primary/50 text-primary bg-transparent hover:bg-primary/10 hover:border-primary hover:shadow-[0_0_20px_hsl(187_100%_50%_/_0.3)]",
+        "outline-glow": "border border-primary/50 text-primary bg-transparent hover:bg-primary/10 hover:border-primary hover:shadow-[0_0_20px_hsl(43_74%_49%_/_0.3)]",
       },
       size: {
         default: "h-10 px-4 py-2",

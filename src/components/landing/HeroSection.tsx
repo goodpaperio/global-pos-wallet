@@ -70,7 +70,7 @@ const HeroSection = () => {
               
               {/* Main image */}
               <img
-                src="/idw3-banner.png"
+                src="/idw3-banner.png?v=2"
                 alt="Global network"
                 className="relative z-10 w-full max-w-lg rounded-3xl border border-border/30 shadow-2xl"
               />

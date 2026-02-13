@@ -2,76 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* IDW3 Design System - Futuristic Web3 Aesthetic */
+/* IDW3 Design System - Sandy textured, gold & light orange */
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
-    /* Core backgrounds - Deep space aesthetic */
-    --background: 230 25% 5%;
-    --foreground: 210 40% 98%;
+    /* Core - sandy background, dark text */
+    --background: 38 28% 91%;
+    --foreground: 30 12% 18%;
 
-    /* Card surfaces with glassmorphism */
-    --card: 230 20% 8%;
-    --card-foreground: 210 40% 98%;
+    /* Card surfaces - slightly deeper sand */
+    --card: 36 24% 88%;
+    --card-foreground: 30 12% 18%;
 
-    --popover: 230 20% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 36 24% 88%;
+    --popover-foreground: 30 12% 18%;
 
-    /* Primary - Electric Cyan */
-    --primary: 187 100% 50%;
-    --primary-foreground: 230 25% 5%;
+    /* Primary - Gold */
+    --primary: 43 74% 49%;
+    --primary-foreground: 30 8% 9%;
 
-    /* Secondary - Muted glass */
-    --secondary: 230 15% 15%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary - warm sand */
+    --secondary: 38 22% 85%;
+    --secondary-foreground: 30 12% 18%;
 
     /* Muted elements */
-    --muted: 230 15% 12%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 38 20% 82%;
+    --muted-foreground: 30 10% 42%;
 
-    /* Accent - Teal glow */
-    --accent: 175 80% 45%;
-    --accent-foreground: 230 25% 5%;
+    /* Accent - Light orange */
+    --accent: 32 85% 55%;
+    --accent-foreground: 30 8% 9%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 230 15% 18%;
-    --input: 230 15% 15%;
-    --ring: 187 100% 50%;
+    --border: 35 20% 78%;
+    --input: 38 22% 85%;
+    --ring: 43 74% 49%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(187 100% 50%) 0%, hsl(175 80% 45%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(187 100% 50% / 0.15) 0%, transparent 70%);
-    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(187 100% 50% / 0.15) 0%, transparent 50%);
+    /* Custom gradients - gold to light orange */
+    --gradient-primary: linear-gradient(135deg, hsl(43 74% 49%) 0%, hsl(32 85% 55%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(43 74% 49% / 0.08) 0%, transparent 70%);
+    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(43 74% 49% / 0.08) 0%, transparent 50%);
     
-    /* Glass effect */
-    --glass-bg: hsl(230 20% 10% / 0.6);
-    --glass-border: hsl(230 15% 25% / 0.5);
+    /* Glass effect - sandy translucent */
+    --glass-bg: hsl(38 25% 90% / 0.7);
+    --glass-border: hsl(35 18% 75% / 0.6);
     
-    /* Glow colors */
-    --glow-cyan: 0 0 40px hsl(187 100% 50% / 0.4);
-    --glow-teal: 0 0 40px hsl(175 80% 45% / 0.3);
+    /* Glow colors - gold & light orange */
+    --glow-gold: 0 0 40px hsl(43 74% 49% / 0.25);
+    --glow-orange: 0 0 40px hsl(32 85% 55% / 0.2);
 
-    /* Sidebar - keeping for compatibility */
-    --sidebar-background: 230 25% 5%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 187 100% 50%;
-    --sidebar-primary-foreground: 230 25% 5%;
-    --sidebar-accent: 230 15% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 230 15% 18%;
-    --sidebar-ring: 187 100% 50%;
+    /* Sidebar */
+    --sidebar-background: 38 28% 91%;
+    --sidebar-foreground: 30 12% 18%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 30 8% 9%;
+    --sidebar-accent: 38 22% 85%;
+    --sidebar-accent-foreground: 30 12% 18%;
+    --sidebar-border: 35 20% 78%;
+    --sidebar-ring: 43 74% 49%;
   }
 
   .dark {
-    /* Dark mode is the default for this Web3 aesthetic */
-    --background: 230 25% 5%;
-    --foreground: 210 40% 98%;
+    --background: 30 8% 9%;
+    --foreground: 35 25% 96%;
   }
 }
 
@@ -115,7 +114,7 @@
   }
 
   .glow-hover:hover {
-    box-shadow: var(--glow-cyan);
+    box-shadow: var(--glow-gold);
   }
 
   /* Floating animation */
@@ -139,9 +138,29 @@
   /* Background patterns */
   .bg-grid-pattern {
     background-image: 
-      linear-gradient(to right, hsl(230 15% 15% / 0.3) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(230 15% 15% / 0.3) 1px, transparent 1px);
+      linear-gradient(to right, hsl(35 18% 75% / 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(35 18% 75% / 0.5) 1px, transparent 1px);
     background-size: 60px 60px;
+  }
+
+  /* Sandy textured background - base + subtle grain effect */
+  .bg-sandy {
+    background-color: hsl(38 28% 91%);
+    background-image: 
+      radial-gradient(ellipse 120% 80% at 50% 0%, hsl(42 30% 94%) 0%, transparent 50%),
+      radial-gradient(ellipse 80% 120% at 80% 100%, hsl(35 25% 88%) 0%, transparent 50%);
+  }
+
+  .bg-sandy-texture {
+    position: relative;
+  }
+
+  .bg-sandy-texture::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
   }
 }
 

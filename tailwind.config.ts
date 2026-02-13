@@ -61,12 +61,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom Web3 colors
-        cyan: {
-          glow: "hsl(187 100% 50%)",
+        // Custom palette
+        gold: {
+          DEFAULT: "hsl(43 74% 49%)",
+          glow: "hsl(43 74% 49% / 0.35)",
         },
-        teal: {
-          glow: "hsl(175 80% 45%)",
+        "light-orange": {
+          DEFAULT: "hsl(32 85% 55%)",
+          glow: "hsl(32 85% 55% / 0.3)",
         },
       },
       borderRadius: {
@@ -102,7 +104,7 @@ export default {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "hero-glow": "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(187 100% 50% / 0.15) 0%, transparent 50%)",
+        "hero-glow": "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(43 74% 49% / 0.08) 0%, transparent 50%)",
       },
     },
   },
